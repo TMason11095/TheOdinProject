@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css-exercises\\foundations",
+    "\\css-exercises\\foundations\\06-cascade-fix",
+    "\\css-exercises\\foundations\\06-cascade-fix\\solution",
     "\\odin-recipes",
     "\\odin-recipes\\recipes"
   ],
-  "SelectedNode": "\\css-exercises",
+  "SelectedNode": "\\odin-recipes",
   "PreviewInSolutionExplorer": false
 }
