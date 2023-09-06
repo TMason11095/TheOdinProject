@@ -3,6 +3,10 @@
 	color: white;
 }
 
+div {
+	text-align: center;
+}
+
 img {
 	width: 800px;
 	height: auto;
@@ -12,6 +16,14 @@ img {
 	font-weight: bold;
 }
 
-a:visited {
-	color: red;
+button {
+	width: 200px;
+	height: 50px;
+	margin: 16px;
+}
+
+#recipes .left-center {
+	width:1000px;
+	margin: auto;
+	text-align:left;
 }
