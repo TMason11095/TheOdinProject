@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css-exercises\\foundations",
-    "\\css-exercises\\foundations\\06-cascade-fix",
     "\\css-exercises\\foundations\\06-cascade-fix\\solution",
+    "\\css-exercises\\margin-and-padding",
+    "\\css-exercises\\margin-and-padding\\01-margin-and-padding-1\\solution",
+    "\\css-exercises\\margin-and-padding\\02-margin-and-padding-2",
     "\\odin-recipes",
     "\\odin-recipes\\recipes"
   ],
-  "SelectedNode": "\\odin-recipes",
+  "SelectedNode": "\\odin-recipes\\recipes\\okonomiyaki.html",
   "PreviewInSolutionExplorer": false
 }
