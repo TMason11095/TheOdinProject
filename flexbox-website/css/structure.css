@@ -1,0 +1,78 @@
+﻿.long-box {
+	min-width: 900px;
+	width: 900px;
+}
+
+.short-box {
+	min-width: 700px;
+	width: 700px;
+}
+
+.short-banner {
+	min-height: 75px;
+	height: 75px;
+}
+
+.item-gap {
+	gap: 32px;
+}
+
+.button-padding {
+	padding: 6px 30px;
+}
+
+.section-padding {
+	padding: 64px 8px;
+}
+
+#body {
+	height: 100vh;
+}
+
+#body > #header > #top > #logo {
+	font-size: 24px;
+}
+
+#body > #header > #content {
+	/*padding: 64px;*/
+}
+
+#body > #header > #content > #left-content {
+	width: 400px;
+	min-width: 300px;
+}
+
+#body > #header > #content > #left-content > #header {
+	font-size: 48px;
+}
+
+#body > #header > #content > #left-content > #button {
+	margin: 8px 0px;
+}
+
+#body > #images-sect > #header {
+	font-size: 36px;
+}
+
+#body > #images-sect > #icons > #icon-text {
+	width: 160px;
+}
+
+#body > #images-sect > #icons > #icon-text > #icon-container {
+	width: 160px;
+	height: 160px;
+}
+
+#body > #quote-sect > #quote-container {
+	padding: 28px;
+}
+
+#body > #quote-sect > #quote-container > #quote {
+	font-size: 36px;
+	font-weight: lighter;
+	font-style: italic;
+}
+
+#body > #sign-up-sect > #background-container {
+	height: 100px;
+}
