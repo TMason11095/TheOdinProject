@@ -72,6 +72,10 @@
 	max-width: 1200px;
 }
 
+#project-screenshot {
+	width: 384px;
+}
+
 #project-container {
 	width: 390px;
 }
