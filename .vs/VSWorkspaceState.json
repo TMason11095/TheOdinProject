@@ -1,15 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css-exercises\\flex\\03-flex-header-2",
-    "\\css-exercises\\flex\\04-flex-information",
-    "\\css-exercises\\flex\\05-flex-modal",
-    "\\css-exercises\\flex\\06-flex-layout",
-    "\\css-exercises\\flex\\07-flex-layout-2",
     "\\flexbox-website",
     "\\flexbox-website\\css",
-    "\\odin-recipes\\recipes"
+    "\\project-viewer",
+    "\\project-viewer\\css",
+    "\\project-viewer\\img"
   ],
-  "SelectedNode": "\\flexbox-website\\css\\container-attributes.css",
+  "SelectedNode": "\\project-viewer\\css\\styles.css",
   "PreviewInSolutionExplorer": false
 }
