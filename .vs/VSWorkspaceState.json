@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\flexbox-website",
-    "\\flexbox-website\\css",
-    "\\project-viewer",
+    "\\js-fundamentals",
+    "\\js-fundamentals\\js-variable",
     "\\project-viewer\\css",
-    "\\project-viewer\\img"
+    "\\Test"
   ],
-  "SelectedNode": "\\project-viewer\\index.html",
+  "SelectedNode": "\\js-fundamentals\\js-variable",
   "PreviewInSolutionExplorer": false
 }
