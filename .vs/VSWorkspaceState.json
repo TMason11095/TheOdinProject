@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\js-fundamentals",
-    "\\js-fundamentals\\javascript-exercises"
+    "\\js-fundamentals\\javascript-exercises",
+    "\\js-fundamentals\\javascript-exercises\\09_palindromes"
   ],
-  "SelectedNode": "\\js-fundamentals\\javascript-exercises\\01_helloWorld",
+  "SelectedNode": "\\js-fundamentals\\javascript-exercises\\04_removeFromArray",
   "PreviewInSolutionExplorer": false
 }
