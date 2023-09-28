@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\js-fundamentals",
-    "\\js-fundamentals\\js-variable",
-    "\\project-viewer",
-    "\\project-viewer\\css",
-    "\\Test"
+    "\\js-fundamentals\\javascript-exercises"
   ],
-  "SelectedNode": "\\project-viewer\\index.html",
+  "SelectedNode": "\\js-fundamentals\\javascript-exercises\\01_helloWorld",
   "PreviewInSolutionExplorer": false
 }
