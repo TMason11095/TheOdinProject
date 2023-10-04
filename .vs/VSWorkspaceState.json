@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\flexbox-website\\css",
     "\\js-fundamentals",
-    "\\js-fundamentals\\javascript-exercises",
-    "\\js-fundamentals\\javascript-exercises\\09_palindromes"
+    "\\js-fundamentals\\javascript-exercises\\09_palindromes",
+    "\\js-fundamentals\\js-dom",
+    "\\js-fundamentals\\shopping-list"
   ],
-  "SelectedNode": "\\js-fundamentals\\javascript-exercises\\04_removeFromArray",
+  "SelectedNode": "\\js-fundamentals\\shopping-list\\shopping-list.html",
   "PreviewInSolutionExplorer": false
 }
