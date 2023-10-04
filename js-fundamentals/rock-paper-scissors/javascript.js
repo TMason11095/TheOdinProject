@@ -1,6 +1,13 @@
 const ROCK = "rock";
 const PAPER = "paper";
 const SCISSORS = "scissors";
+const ROUND_RESULT_ELEM = document.querySelector('#round-result');
+const GAME_RESULT_ELEM = document.querySelector('#game-result');
+const SCORE_TO_WIN = 5;
+
+let roundCount = 0;
+let winCount = 0;
+let lossCount = 0;
 
 function getRps(number) {
 	switch (number) {
@@ -17,11 +24,6 @@ function getRps(number) {
 
 	//Not an RPS value
 	return number;
-}
-
-function getUserChoice() {
-	let userChoice = prompt("Please type your choice:");
-	return userChoice;
 }
 
 function getComputerChoice() {
@@ -60,35 +62,40 @@ function playRps(playerSelection, computerSelection) {
 	return null;
 }
 
+function capitalize(text) {
+	//Capitalize the first char
+	return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 function getResultText(resultValue, playerSelection, computerSelection) {
 	//0 = Draw
 	if (resultValue == 0) {
-		return "Draw! " + playerSelection + " ties " + computerSelection;
+		return "Draw! " + capitalize(playerSelection) + " ties " + computerSelection + "!";
 	}
 	//Positive = Win
 	if (resultValue > 0) {
-		return "You Win! " + playerSelection + " beats " + computerSelection;
+		return "You Win! " + capitalize(playerSelection) + " beats " + computerSelection + "!";
 	}
 	//Negative = Lose
 	if (resultValue < 0) {
-		return "You Lose! " + computerChoice + " beats " + playerChoice;
+		return "You Lose! " + capitalize(computerChoice) + " beats " + playerChoice + "!";
 	}
 	//Anything else = Error
 	return "Not a valid result";
 }
 
-function getOverallWinner(playerWinCount, playerLossCount) {
+function getGameResults() {
 	let result = "";
 	//Draw
-	if (playerWinCount == playerLossCount) {
+	if (winCount == lossCount) {
 		result = "Draw!";
 	}
 	//Win
-	if (playerWinCount > playerLossCount) {
+	if (winCount > lossCount) {
 		result = "You Win!";
 	}
 	//Lose
-	if (playerWinCount < playerLossCount) {
+	if (winCount < lossCount) {
 		result = "You Lose!";
 	}
 	//Error
@@ -97,37 +104,83 @@ function getOverallWinner(playerWinCount, playerLossCount) {
 	}
 
 	//Add the score to the end
-	result += " " + playerWinCount + " - " + playerLossCount;
+	result += " " + getScoreText();
 	//Return
 	return result;
 }
 
-function game() {
-	const numberOfGames = 5;
-	let winCount = 0;
-	let lossCount = 0;
-
-	//Play the set number of games
-	for (let i = 0; i < numberOfGames; i++) {
-		//Get the player's choice
-		let userChoice = getUserChoice();
-		//Get the computer's choice
-		let computerChoice = getComputerChoice()
-		//Get the game result
-		let result = playRps(userChoice, computerChoice);
-		//Display the results
-		console.log(getResultText(result, userChoice, computerChoice));
-		//Update the scores
-		if (result > 0) {
-			winCount++;
-		}
-		else if (result < 0) {
-			lossCount++;
-		}
-	}
-
-	//Display the overall winner
-	console.log(getOverallWinner(winCount, lossCount));
+function getScoreText() {
+	return winCount + " - " + lossCount;
 }
 
-game();
+function isGameOver() {
+	if (winCount >= SCORE_TO_WIN || lossCount >= SCORE_TO_WIN) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+function handleUserChoice(e) {
+	//Reset the game if the game ended last round
+	if (isGameOver()) {
+		resetGame();
+	}
+
+	//Increment the round counter
+	roundCount++;
+	//Play the round
+	playRound(e.target.value);
+	//Update scores
+	displayGameResults(getScoreText());
+	//Check if the game ended
+	if (isGameOver()) {
+		//Display results
+		displayGameResults(getGameResults());
+	}
+}
+
+function playRound(userChoice) {
+	//Get the computer's choice
+	let computerChoice = getComputerChoice()
+	//Get the game result
+	let result = playRps(userChoice, computerChoice);
+	//Update scores
+	updateScores(result);
+	//Display the results
+	displayResults(getResultText(result, userChoice, computerChoice));
+}
+
+function updateScores(result) {
+	if (result > 0) {
+		winCount++;
+	}
+	else if (result < 0) {
+		lossCount++;
+	}
+}
+
+function displayResults(resultText) {
+	ROUND_RESULT_ELEM.textContent = resultText;
+}
+
+function displayGameResults(resultText) {
+	GAME_RESULT_ELEM.textContent = resultText;
+}
+
+function resetGame() {
+	//Clear results
+	displayResults("");
+	displayGameResults("");
+	//Reset counts
+	roundCount = 0;
+	winCount = 0;
+	lossCount = 0;
+	drawCount = 0;
+}
+
+//Setup button events
+document.querySelectorAll('[name="choices"] button').forEach((btn) => btn.onclick = handleUserChoice);
+
+//game();

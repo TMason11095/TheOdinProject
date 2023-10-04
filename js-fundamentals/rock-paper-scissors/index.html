@@ -3,9 +3,22 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/container-attributes.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <div id="game-container" class="flex column gap">
+        <div name="choices" class="flex row justify-content-center gap">
+            <button name="rock" value="rock">Rock</button>
+            <button name="paper" value="paper">Paper</button>
+            <button name="scissors" value="scissors">Scissors</button>
+        </div>
+        <div id="results-container" class="flex column align-items-center gap">
+            <div id="round-result"></div>
+            <div id="game-result"></div>
+        </div>
+    </div>
     <script src="javascript.js"></script>
 </body>
 </html>
