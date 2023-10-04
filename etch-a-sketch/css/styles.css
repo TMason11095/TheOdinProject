@@ -1,0 +1,55 @@
+﻿/*Colors*/
+:root {
+	--dark-blue: #1F2937;
+	--white: #F9FAF8;
+	--grey: #E5E7EB;
+	--dark-grey: #808080;
+	--light-blue: #3882F6;
+	--transparent-light-blue: #3882F630;
+	/*Colors for filter tags*/
+	--tag-green: #178600;
+	--tag-purple: #563d7c;
+	--tag-black: #292929;
+	--tag-red: #bd2c00;
+	--tag-yellow: #f1e05a;
+}
+
+.dark-blue-background {
+	background-color: var(--dark-blue);
+}
+
+.dark-blue-text {
+	color: var(--dark-blue);
+}
+
+.white-background {
+	background-color: var(--white);
+}
+
+.white-text {
+	color: var(--white);
+}
+
+.light-blue-border {
+	border-color: var(--light-blue);
+}
+
+#icon-container:hover,
+.trans-light-blue-background {
+	background: var(--transparent-light-blue);
+}
+
+.light-blue-text {
+	color: var(--light-blue);
+}
+
+.grey-background {
+	background: var(--grey);
+}
+
+/*Items*/
+[name="block"] {
+	width: 16px;
+	height: 16px;
+	border-style: solid;
+}

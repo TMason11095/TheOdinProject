@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\flexbox-website\\css",
     "\\js-fundamentals",
-    "\\js-fundamentals\\javascript-exercises\\09_palindromes",
     "\\js-fundamentals\\js-dom",
-    "\\js-fundamentals\\shopping-list"
+    "\\js-fundamentals\\rock-paper-scissors",
+    "\\js-fundamentals\\rock-paper-scissors\\css",
+    "\\project-viewer",
+    "\\project-viewer\\css"
   ],
-  "SelectedNode": "\\js-fundamentals\\shopping-list\\shopping-list.html",
   "PreviewInSolutionExplorer": false
 }
