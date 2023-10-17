@@ -12,6 +12,13 @@
 	--tag-black: #292929;
 	--tag-red: #bd2c00;
 	--tag-yellow: #f1e05a;
+	/*Consts*/
+	--sketch-container-size: 512px;
+	--block-size: 8px;
+}
+
+.black-background {
+	background-color: black;
 }
 
 .dark-blue-background {
@@ -48,8 +55,21 @@
 }
 
 /*Items*/
+#sketch-container {
+	width: var(--sketch-container-size);
+	height: var(--sketch-container-size);
+}
+
 [name="block"] {
-	width: 16px;
-	height: 16px;
-	border-style: solid;
+	width: var(--block-size);
+	height: var(--block-size);
+	/*border-style: solid;*/
+}
+
+.gap {
+	gap: 10px;
+}
+
+#square-size-input {
+	width: 48px;
 }

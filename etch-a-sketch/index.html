@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="./css/container-attributes.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body class="flex justify-content-center">
-    <div id="sketch-container" class="flex column border shrink-1">
+<body class="flex column align-items-center gap">
+    <div id="header-container" class="flex row shrink-1 gap">
+        <div>
+            Squares per side (1-100):
+        </div>
+        <input type="number" id="square-size-input" min="1" max="100" value="64"/>
+        <button id="generate-grid">Generate</button>
+    </div>
+    <div id="sketch-container" class="flex column border">
 
     </div>
 

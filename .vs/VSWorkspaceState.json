@@ -1,12 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\js-fundamentals",
-    "\\js-fundamentals\\js-dom",
-    "\\js-fundamentals\\rock-paper-scissors",
-    "\\js-fundamentals\\rock-paper-scissors\\css",
-    "\\project-viewer",
-    "\\project-viewer\\css"
+    "\\etch-a-sketch",
+    "\\etch-a-sketch\\css"
   ],
+  "SelectedNode": "\\etch-a-sketch\\index.html",
   "PreviewInSolutionExplorer": false
 }
