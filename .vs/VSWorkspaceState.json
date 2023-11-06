@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\etch-a-sketch",
-    "\\etch-a-sketch\\css"
+    "\\etch-a-sketch\\css",
+    "\\js-fundamentals",
+    "\\js-fundamentals\\javascript-exercises",
+    "\\js-fundamentals\\javascript-exercises\\12_findTheOldest"
   ],
-  "SelectedNode": "\\etch-a-sketch\\javascript.js",
+  "SelectedNode": "\\js-fundamentals\\javascript-exercises\\12_findTheOldest",
   "PreviewInSolutionExplorer": false
 }
