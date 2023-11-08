@@ -142,6 +142,10 @@
 	gap: 14px;
 }
 
+.social-gap {
+	gap: 32px;
+}
+
 #link {
 	height: 24px;
 }
