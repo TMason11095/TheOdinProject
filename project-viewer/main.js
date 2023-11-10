@@ -158,12 +158,51 @@ function buildDateRange(startText, endText) {
 	return startText + " - " + endText;
 }
 
+function getTodayPlusOneMonth() {
+	//Get today's date
+	const newDate = new Date();
+	//Add one month
+	newDate.setMonth(newDate.getMonth() + 1);
+
+	return newDate;
+}
+
+function getFutureDateIfNull(date) {
+	//Check if null
+	if (date == null) {
+		//Return today + 1 month
+		return getTodayPlusOneMonth();
+	}
+
+	//Not null so just return the original date
+	return date;
+}
+
 (function setupProjects() {
 	//Get the main container that holds all the projects
 	const projectsContainer = $('#projects');
+	//Sort projects by end date
+	PROJECT_DATA.sort((a, b) => {
+		//Get dates
+		var aDate = a.dateEnd;
+		var bDate = b.dateEnd;
+
+		//Return 0 if both are the same
+		if (aDate == bDate) {
+			return 0;
+		}
+
+		//Set the dates to next month if null (present)
+		aDate = getFutureDateIfNull(aDate);
+		bDate = getFutureDateIfNull(bDate);
+
+		//Compare the dates and return
+		return bDate - aDate;
+	});
 	//Generate all the projects as elements (need to sort before appending them)
 	const unsortedProjects = [];
 	PROJECT_DATA.forEach((projectData) => unsortedProjects.push(createProject(projectData)));
+	
 	//Add projects to container
 	unsortedProjects.forEach((project) => projectsContainer.append(project));
 })();

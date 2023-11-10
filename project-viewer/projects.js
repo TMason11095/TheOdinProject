@@ -30,12 +30,50 @@ const PROJECT_DATA = [
 			SKILLS.css,
 			SKILLS.html,
 			SKILLS.jquery,
+			SKILLS.dom,
 			SKILLS.visualStudio,
 			SKILLS.gitHub,
 			SKILLS.boxModel
 		],
 		link: "./index.html",
-		img: "./img/9-13-2023-portfolio-website-screenshot-16-9.png",
+		img: "./img/11-10-2023-portfolio-website-screenshot-16-9.png",
 		altText: "Screenshot of portfolio website."
+	},
+	{
+		name: "Etch-A-Sketch",
+		dateStart: createDateObj("2023-10"),
+		dateEnd: createDateObj("2023-11"),
+		desc: "Website built using JS/jQuery/CSS/HTML that lets you draw on a user defined canvas.",
+		skills: [
+			SKILLS.js,
+			SKILLS.css,
+			SKILLS.html,
+			SKILLS.jquery,
+			SKILLS.dom,
+			SKILLS.visualStudio,
+			SKILLS.gitHub,
+			SKILLS.boxModel
+		],
+		link: "../etch-a-sketch/index.html",
+		img: "./img/etch-a-scetch-screenshot-16-9-small.png",
+		altText: "Screenshot of Etch-A-Sketch website."
+	},
+	{
+		name: "Rock Paper Scissors",
+		dateStart: createDateObj("2023-09"),
+		dateEnd: createDateObj("2023-10"),
+		desc: "Website created using JS/CSS/HTML to play rock paper scissors against a computer.",
+		skills: [
+			SKILLS.js,
+			SKILLS.css,
+			SKILLS.html,
+			SKILLS.dom,
+			SKILLS.visualStudio,
+			SKILLS.gitHub,
+			SKILLS.boxModel
+		],
+		link: "../js-fundamentals/rock-paper-scissors/index.html",
+		img: "./img/rock-paper-scissors-screenshot-16-9-small.png",
+		altText: "Screenshot of Rock Paper Scissors website."
 	}
 ];
