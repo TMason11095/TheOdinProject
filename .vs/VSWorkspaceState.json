@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\etch-a-sketch",
     "\\etch-a-sketch\\css",
-    "\\js-fundamentals",
-    "\\js-fundamentals\\javascript-exercises",
-    "\\js-fundamentals\\javascript-exercises\\12_findTheOldest"
+    "\\project-viewer",
+    "\\project-viewer\\css",
+    "\\project-viewer\\img"
   ],
-  "SelectedNode": "\\js-fundamentals\\javascript-exercises\\12_findTheOldest",
+  "SelectedNode": "\\project-viewer\\index.html",
   "PreviewInSolutionExplorer": false
 }

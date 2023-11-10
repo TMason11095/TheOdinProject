@@ -1,140 +1,157 @@
-const skillCategories = {
-    language: "Programming Languages",
-    library: "Frameworks/Libraries",
-    pattern: "Architectural Patterns",
-    tool: "Tools",
-    foreign: "Foreign Languages"
-}
+const SKILL_CATEGORIES = {
+    language: {
+        text: "Programming Languages",
+        tagCssName: "language-border-color"
+    },
+    library: {
+        text: "Frameworks/Libraries",
+        tagCssName: "library-border-color"
+    },
+    pattern: {
+        text: "Architectural Patterns",
+        tagCssName: "pattern-border-color"
+    },
+    tool: {
+        text: "Tools",
+        tagCssName: "tool-border-color"
+    },
+    foreign: {
+        text: "Foreign Languages"
 
-const skills = [
-    {
+    }
+};
+
+const SKILLS = {
+    cSharp: {
         rank: 10,
         name: "C#",
-        category: skillCategories.language,
+        category: SKILL_CATEGORIES.language,
     },
-    {
+    sql: {
         rank: 20,
         name: "SQL",
-        category: skillCategories.language,
+        category: SKILL_CATEGORIES.language,
     },
-    {
+    js: {
         rank: 30,
         name: "JS",
-        category: skillCategories.language,
+        category: SKILL_CATEGORIES.language,
     },
-    {
+    css: {
         rank: 40,
         name: "CSS",
-        category: skillCategories.language,
+        category: SKILL_CATEGORIES.language,
     },
-    {
+    html: {
         rank: 50,
         name: "HTML",
-        category: skillCategories.language,
+        category: SKILL_CATEGORIES.language,
     },
-    {
+    powerBuilder: {
         rank: 60,
         name: "PowerBuilder",
-        category: skillCategories.language,
+        category: SKILL_CATEGORIES.language,
     },
-    {
+    linq: {
         rank: 10,
         name: "LINQ",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    aspDotNET: {
         rank: 20,
         name: "ASP.NET",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    jquery: {
         rank: 30,
         name: "jQuery",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    ef: {
         rank: 40,
         name: "EF",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    dom: {
         rank: 50,
         name: "DOM",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    json: {
         rank: 60,
         name: "JSON",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    xml: {
         rank: 70,
         name: "XML",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    jest: {
         rank: 80,
         name: "Jest",
-        category: skillCategories.library,
+        category: SKILL_CATEGORIES.library,
     },
-    {
+    restfulAPI: {
         rank: 10,
         name: "RESTful API",
-        category: skillCategories.pattern,
+        category: SKILL_CATEGORIES.pattern,
     },
-    {
+    mvc: {
         rank: 20,
         name: "MVC",
-        category: skillCategories.pattern,
+        category: SKILL_CATEGORIES.pattern,
     },
-    {
+    tdd: {
         rank: 30,
         name: "TDD",
-        category: skillCategories.pattern,
+        category: SKILL_CATEGORIES.pattern,
     },
-    {
+    oop: {
         rank: 40,
         name: "OOP",
-        category: skillCategories.pattern,
+        category: SKILL_CATEGORIES.pattern,
     },
-    {
+    solid: {
         rank: 50,
         name: "SOLID",
-        category: skillCategories.pattern,
+        category: SKILL_CATEGORIES.pattern,
     },
-    {
+    boxModel: {
         rank: 60,
         name: "Box Model",
-        category: skillCategories.pattern,
+        category: SKILL_CATEGORIES.pattern,
     },
-    {
+    visualStudio: {
         rank: 10,
         name: "Visual Studio",
-        category: skillCategories.tool,
+        category: SKILL_CATEGORIES.tool,
     },
-    {
+    msSQLServer: {
         rank: 20,
         name: "Microsoft SQL Server",
-        category: skillCategories.tool,
+        category: SKILL_CATEGORIES.tool,
     },
-    {
+    gitHub: {
         rank: 30,
         name: "GitHub",
-        category: skillCategories.tool,
+        category: SKILL_CATEGORIES.tool,
     },
-    {
+    jira: {
         rank: 40,
         name: "Jira",
-        category: skillCategories.tool,
+        category: SKILL_CATEGORIES.tool,
     },
-    {
+    workflowServer: {
         rank: 50,
         name: "Workflow Server",
-        category: skillCategories.tool,
+        category: SKILL_CATEGORIES.tool,
     },
-    {
+    intermediateJapanese: {
         rank: 10,
         name: "Intermediate Japanese",
-        category: skillCategories.foreign,
+        category: SKILL_CATEGORIES.foreign,
     },
-]
+};
+
+const SKILLS_ARRAY = Object.values(SKILLS);
