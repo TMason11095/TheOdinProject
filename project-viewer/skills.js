@@ -27,9 +27,9 @@ const SKILLS = {
         name: "C#",
         category: SKILL_CATEGORIES.language,
     },
-    sql: {
+    tSql: {
         rank: 20,
-        name: "SQL",
+        name: "T-SQL",
         category: SKILL_CATEGORIES.language,
     },
     js: {

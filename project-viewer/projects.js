@@ -23,7 +23,7 @@ const PROJECT_DATA = [
 	{
 		name: "Portfolio Website",
 		dateStart: createDateObj("2023-09"),
-		dateEnd: null,
+		dateEnd: createDateObj("2023-11"),
 		desc: "This portfolio website. Built using JS/jQuery/CSS/HTML to display web projects that I’ve created.",
 		skills: [
 			SKILLS.js,
@@ -36,7 +36,7 @@ const PROJECT_DATA = [
 			SKILLS.boxModel
 		],
 		link: "./index.html",
-		img: "./img/11-10-2023-portfolio-website-screenshot-16-9.png",
+		img: "./img/11-28-2023-portfolio-website-screenshot-16-9.png",
 		altText: "Screenshot of portfolio website."
 	},
 	{
@@ -75,5 +75,24 @@ const PROJECT_DATA = [
 		link: "../js-fundamentals/rock-paper-scissors/index.html",
 		img: "./img/rock-paper-scissors-screenshot-16-9-small.png",
 		altText: "Screenshot of Rock Paper Scissors website."
+	},
+	{
+		name: "Calculator",
+		dateStart: createDateObj("2023-11"),
+		dateEnd: createDateObj("2023-11"),
+		desc: "Calculator built using JS/jQuery/CSS/HTML.",
+		skills: [
+			SKILLS.js,
+			SKILLS.css,
+			SKILLS.html,
+			SKILLS.jquery,
+			SKILLS.dom,
+			SKILLS.visualStudio,
+			SKILLS.gitHub,
+			SKILLS.boxModel
+		],
+		link: "../calculator/index.html",
+		img: "./img/calculator-screenshot-16-9-small.png",
+		altText: "Screenshot of Calculator website."
 	}
 ];
