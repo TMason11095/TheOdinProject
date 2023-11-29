@@ -1,12 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\calculator",
+    "\\calculator\\css",
+    "\\calculator\\js",
     "\\etch-a-sketch",
     "\\etch-a-sketch\\css",
     "\\project-viewer",
     "\\project-viewer\\css",
     "\\project-viewer\\img"
   ],
-  "SelectedNode": "\\project-viewer",
+  "SelectedNode": "\\etch-a-sketch\\javascript.js",
   "PreviewInSolutionExplorer": false
 }
